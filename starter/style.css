@@ -69,3 +69,69 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+/* First time [hours] column*/
+.first-column {
+  background-color: rgb(191, 224, 235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(84, 84, 237);
+  font: weight bold;
+}
+
+/* Second content column for writing events*/
+.second-column {
+  background-color: rgb(193, 196, 199);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: blue;
+  font: weight bold;
+}
+
+/* Second content column for writing events >>> for when then hour has passed*/
+.second-column-red {
+  background-color: #f4948e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: blue;
+  font: weight bold;
+}
+
+/* Second content column for writing events >>> for when it is the present-right-now hour*/
+.second-column-green {
+  background-color: #8ef4cb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: blue;
+  font: weight bold;
+}
+
+/*Third 'Save' column*/
+.save-column {
+  background-color: rgb(224, 245, 148);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: blue;
+  font: weight bold;
+}
+
+/*Third 'Save' button*/
+.btn {
+  background-color: rgb(237, 173, 99);
+  border: none;
+  color: rgb(61, 27, 27);
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
