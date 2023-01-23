@@ -4,6 +4,11 @@ body {
   line-height: 1;
 }
 
+.jumbotron {
+  background-color: #95d1e7 !important;
+}
+
+
 textarea {
   background: transparent;
   border: none;
@@ -116,7 +121,7 @@ textarea {
 
 /*Third 'Save' column*/
 .save-column {
-  background-color: rgb(224, 245, 148);
+  background-color: rgb(203, 222, 134);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,3 +140,7 @@ textarea {
   cursor: pointer;
 }
 
+/* Darker background on mouse-over
+.btn:hover {
+  background-color: RoyalBlue;
+} */
