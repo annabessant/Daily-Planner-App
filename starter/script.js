@@ -322,3 +322,18 @@ function load() {
         }
     }
 }
+
+// Event listeners for 'save here'buttomns
+saveButton9.addEventListener('click', function() {saveBlockText(saveButton9);});
+saveButton10.addEventListener('click', function() {saveBlockText(saveButton10);});
+saveButton11.addEventListener('click', function() {saveBlockText(saveButton11);});
+saveButton12.addEventListener('click', function() {saveBlockText(saveButton12);});
+saveButton1.addEventListener('click', function() {saveBlockText(saveButton1);});
+saveButton2.addEventListener('click', function() {saveBlockText(saveButton2);});
+saveButton3.addEventListener('click', function() {saveBlockText(saveButton3);});
+saveButton4.addEventListener('click', function() {saveBlockText(saveButton4);});
+saveButton5.addEventListener('click', function() {saveBlockText(saveButton5);});
+
+// Block color and load the tex
+load ();
+setInterval(function() {blockColor();}, 1000); 
