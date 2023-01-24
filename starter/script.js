@@ -176,9 +176,99 @@ if (currentTimeBlock === 4) {
     textColumn4.classList.add(second-column-orange);
 }
 
-// if not is 09:00 >> highlight 09:00 slot
-if (currentTimeBlock === 9) {
-    textColumn9.classList.remove('second-column');
-    textColumn9.classList.remove(second-column-green);
-    textColumn9.classList.add(second-column-orange);
+// if not is 5:00pm >> highlight 5:00pm slot
+if (currentTimeBlock === 5) {
+    textColumn5.classList.remove('second-column');
+    textColumn5.classList.remove(second-column-green);
+    textColumn5.classList.add(second-column-orange);
+}
+
+// Save the text written in column 2 by clicking on 'Save here' in column 3
+function saveBlockText (saveButton) {
+    //for 09:00 'Save here' click
+    if (saveButton === saveButton9) {
+        for (var i = 0; i < savedText.length; i++) {
+            if (savedText[i].block === 9) {
+                savedText[i].text = textColumn9.textContent;
+            }
+        }
+    }
+
+//for 100:00 'Save here' click
+if (saveButton === saveButton10) {
+    for (var i = 0; i < savedText.length; i++) {
+        if (savedText[i].block === 10) {
+            savedText[i].text = textColumn10.textContent;
+        }
+    }
+}
+
+//for 11:00 'Save here' click
+if (saveButton === saveButton11) {
+    for (var i = 0; i < savedText.length; i++) {
+        if (savedText[i].block === 11) {
+            savedText[i].text = textColumn11.textContent;
+        }
+    }
+}
+
+//for 12:00 'Save here' click
+if (saveButton === saveButton12) {
+    for (var i = 0; i < savedText.length; i++) {
+        if (savedText[i].block === 12) {
+            savedText[i].text = textColumn12.textContent;
+        }
+    }
+}
+
+//for 1:00pm 'Save here' click
+if (saveButton === saveButton1) {
+    for (var i = 0; i < savedText.length; i++) {
+        if (savedText[i].block === 1) {
+            savedText[i].text = textColumn1.textContent;
+        }
+    }
+}
+
+//for 2:00pm 'Save here' click
+if (saveButton === saveButton2) {
+    for (var i = 0; i < savedText.length; i++) {
+        if (savedText[i].block === 2) {
+            savedText[i].text = textColumn2.textContent;
+        }
+    }
+}
+
+
+//for 3:00pm 'Save here' click
+if (saveButton === saveButton3) {
+    for (var i = 0; i < savedText.length; i++) {
+        if (savedText[i].block === 3) {
+            savedText[i].text = textColumn3.textContent;
+        }
+    }
+}
+
+//for 4:00pm 'Save here' click
+if (saveButton === saveButton4) {
+    for (var i = 0; i < savedText.length; i++) {
+        if (savedText[i].block === 4) {
+            savedText[i].text = textColumn4.textContent;
+        }
+    }
+}
+
+
+//for 5:00pm 'Save here' click
+if (saveButton === saveButton5) {
+    for (var i = 0; i < savedText.length; i++) {
+        if (savedText[i].block === 5) {
+            savedText[i].text = textColumn5.textContent;
+        }
+    }
+}
+
+// Create storage for saved content. Show date + time when it was saved
+localStorage.setItem("savedText", JSON.stringify(savedText));
+saved.textContent = "Last saved: " + date.textContent;
 }
