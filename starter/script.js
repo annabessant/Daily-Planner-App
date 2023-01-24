@@ -118,3 +118,67 @@ function blockColor () {
         currentTimeBlock = 6;
     }
 }
+
+// Set up function for the excat / presenttime
+// if not is 09:00 >> highlight 09:00 slot
+if (currentTimeBlock === 9) {
+    textColumn9.classList.remove('second-column');
+    textColumn9.classList.remove(second-column-green);
+    textColumn9.classList.add(second-column-orange);
+}
+
+// if not is 10:00 >> highlight 10:00 slot
+if (currentTimeBlock === 10) {
+    textColumn10.classList.remove('second-column');
+    textColumn10.classList.remove(second-column-green);
+    textColumn10.classList.add(second-column-orange);
+}
+
+// if not is 11:00 >> highlight 11:00 slot
+if (currentTimeBlock === 11) {
+    textColumn11.classList.remove('second-column');
+    textColumn11.classList.remove(second-column-green);
+    textColumn11.classList.add(second-column-orange);
+}
+
+// if not is 12:00 >> highlight 12:00 slot
+if (currentTimeBlock === 12) {
+    textColumn12.classList.remove('second-column');
+    textColumn12.classList.remove(second-column-green);
+    textColumn12.classList.add(second-column-orange);
+}
+
+// if not is 1:00pm >> highlight 1:00pm slot
+if (currentTimeBlock === 1) {
+    textColumn1.classList.remove('second-column');
+    textColumn1.classList.remove(second-column-green);
+    textColumn1.classList.add(second-column-orange);
+}
+
+// if not is 2:00pm >> highlight 2:00pm slot
+if (currentTimeBlock === 2) {
+    textColumn2.classList.remove('second-column');
+    textColumn2.classList.remove(second-column-green);
+    textColumn2.classList.add(second-column-orange);
+}
+
+// if not is 3:00pm >> highlight 3:00pm slot
+if (currentTimeBlock === 3) {
+    textColumn3.classList.remove('second-column');
+    textColumn3.classList.remove(second-column-green);
+    textColumn3.classList.add(second-column-orange);
+}
+
+// if not is 4:00pm >> highlight 4:00 slot
+if (currentTimeBlock === 4) {
+    textColumn4.classList.remove('second-column');
+    textColumn4.classList.remove(second-column-green);
+    textColumn4.classList.add(second-column-orange);
+}
+
+// if not is 09:00 >> highlight 09:00 slot
+if (currentTimeBlock === 9) {
+    textColumn9.classList.remove('second-column');
+    textColumn9.classList.remove(second-column-green);
+    textColumn9.classList.add(second-column-orange);
+}
