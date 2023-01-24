@@ -272,3 +272,53 @@ if (saveButton === saveButton5) {
 localStorage.setItem("savedText", JSON.stringify(savedText));
 saved.textContent = "Last saved: " + date.textContent;
 }
+
+// For user to see what was saved in column 2 and when
+function load() {
+    savedText = JSON.parse(localStorage.getItem("savedText"));
+    for (var i = o; (savedText.length) && (i < savedText.length); i++) {
+        // when clicking on 09:00 saved content
+        if (savedText[i].block===9) {
+            textColumn9.textContent = savedText[i].text;
+        }
+
+        // when clicking on 10:00 saved content
+        if (savedText[i].block===10) {
+            textColumn10.textContent = savedText[i].text;
+        }
+
+        // when clicking on 11:00 saved content
+        if (savedText[i].block===11) {
+        textColumn11.textContent = savedText[i].text;
+        }
+
+        // when clicking on 12:00 saved content
+        if (savedText[i].block===12) {
+            textColumn12.textContent = savedText[i].text;
+        }
+
+        // when clicking on 1:00pm saved content
+        if (savedText[i].block===1) {
+            textColumn1.textContent = savedText[i].text;
+        }
+        // when clicking on 2:00pm saved content
+        if (savedText[i].block===2) {
+            textColumn2.textContent = savedText[i].text;
+        }
+
+        // when clicking on 3:00pm saved content
+        if (savedText[i].block===3) {
+            textColumn3.textContent = savedText[i].text;
+        }
+        
+        // when clicking on 4:00pm saved content
+        if (savedText[i].block===4) {
+            textColumn4.textContent = savedText[i].text;
+        }
+
+        // when clicking on 5:00pm saved content
+        if (savedText[i].block===5) {
+            textColumn5.textContent = savedText[i].text;
+        }
+    }
+}
